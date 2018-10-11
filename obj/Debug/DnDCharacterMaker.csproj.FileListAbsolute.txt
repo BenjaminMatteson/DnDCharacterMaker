@@ -1,0 +1,14 @@
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\bin\Debug\DnDCharacterMaker.exe.config
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\bin\Debug\DnDCharacterMaker.exe
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\bin\Debug\DnDCharacterMaker.pdb
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.csprojResolveAssemblyReference.cache
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\MainWindow.g.cs
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\App.g.cs
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker_MarkupCompile.cache
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker_MarkupCompile.lref
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\MainWindow.baml
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.g.resources
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.Properties.Resources.resources
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.csproj.GenerateResource.Cache
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.exe
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.pdb
