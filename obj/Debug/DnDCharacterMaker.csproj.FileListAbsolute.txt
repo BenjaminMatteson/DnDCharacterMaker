@@ -12,3 +12,5 @@ C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacte
 C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.csproj.GenerateResource.Cache
 C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.exe
 C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.pdb
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\bin\Debug\Newtonsoft.Json.xml

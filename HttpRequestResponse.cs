@@ -6,6 +6,7 @@ using System.Net;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace DnDCharacterMaker
 {
@@ -35,7 +36,7 @@ namespace DnDCharacterMaker
             return content;
         }
 
-        public CharacterClass GetReleases(string url)
+        public PlayerClass GetPlayerClass(string url)
         {
             var request = (HttpWebRequest)WebRequest.Create(url);
 
@@ -44,7 +45,7 @@ namespace DnDCharacterMaker
             request.AutomaticDecompression = DecompressionMethods.Deflate | DecompressionMethods.GZip | DecompressionMethods.None;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
-            var characterClass = new CharacterClass();
+            var characterClass = new PlayerClass();
 
             using (var response = (HttpWebResponse)request.GetResponse())
             {
@@ -52,11 +53,11 @@ namespace DnDCharacterMaker
                 {
                     using (var sr = new StreamReader(stream))
                     {
-                        characterClass = JsonConvert. 
+                        characterClass = JsonConvert.DeserializeObject<PlayerClass>(sr.ReadToEnd());
                     }
                 }
             }
-            return content; 
+            return characterClass;
         }
     }
 }

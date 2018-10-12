@@ -1,5 +1,5 @@
 ﻿
-public class CharacterClass
+public class PlayerClass
 {
     public string _id { get; set; }
     public int index { get; set; }

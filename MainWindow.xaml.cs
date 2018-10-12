@@ -25,9 +25,13 @@ namespace DnDCharacterMaker
         {
             InitializeComponent();
 
-            var content = new JSONDeserializer();
+            var httpRequestResponse = new HttpRequestResponse();
             
-            Debug.WriteLine(content.GetReleases("http://www.dnd5eapi.co/api/classes/1"));
+            var barbarian = httpRequestResponse.GetCharacterClass("http://www.dnd5eapi.co/api/classes/1");
+            Debug.WriteLine(barbarian.name);
+
+            
+
         }
     }
 }
