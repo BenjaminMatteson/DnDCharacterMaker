@@ -23,17 +23,35 @@ namespace DnDCharacterMaker
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string DisplayString { get ;set;}
+
         public MainWindow()
         {
-            InitializeComponent();
+           ShowWindow();
+        }
 
+        private async Task<List<PlayerClassRoute>> LoadClassesAsync()
+        {
             var httpRequestResponse = new HttpRequestResponse();
             var repo = new DnDApiRepository();
+
+            var classList = new List<PlayerClassRoute>();
             foreach (var playerClassValue in PlayerClassRoute.Contents)
             {
-                var _class = repo.GetPlayerClass(playerClassValue);
-               // var _startingEquipment = httpRequestResponse.GetReleases(_class.starting_equipment.url);
+                var _class = await repo.GetPlayerClassAsync(playerClassValue);
             }
+            return classList;
         }
+
+        private async Task ShowWindow()
+        {
+            Debug.Print("Hello!");
+            Debug.Print("Hold Please.");
+            var classList = Task.Run(() => LoadClassesAsync());
+            
+            InitializeComponent();
+            Debug.Print("Bye!");
+        }
+
     }
 }

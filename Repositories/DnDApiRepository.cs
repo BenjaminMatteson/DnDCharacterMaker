@@ -3,6 +3,7 @@ using DnDCharacterMaker.Enumerations;
 using Newtonsoft.Json;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace DnDCharacterMaker.Repositories
 {
@@ -10,15 +11,8 @@ namespace DnDCharacterMaker.Repositories
     {
         private const string endPath = "http://dnd5eapi.co/api";
 
-        //public PlayerClassJson GetPlayerClass(PlayerClassRoute playerClassRoute, string[] fields)
-        //{
-        //
-        //}
-
-        public PlayerClassJson GetPlayerClass(PlayerClassRoute playerClassRoute)
+        public async Task<PlayerClassJson> GetPlayerClassAsync(PlayerClassRoute playerClassRoute)
         {
-
-            //ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
             var characterClass = new PlayerClassJson();
 
