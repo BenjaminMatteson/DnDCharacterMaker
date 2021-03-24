@@ -9,25 +9,24 @@ using System.Diagnostics;
 
 namespace DnDCharacterMaker.Repositories
 {
-    public class DnDApiRepository
+    public static class DnDApiRepository
     {
         private const string endPath = "http://dnd5eapi.co/api";
 
-        public async Task<List<PlayerClassRoute>> LoadClassesAsync()
+        public static async Task<List<PlayerClassRoute>> LoadClassesAsync()
         {
             var httpRequestResponse = new HttpRequestResponse();
-            var repo = new DnDApiRepository();
 
             var classList = new List<PlayerClassRoute>();
             foreach (var playerClassValue in PlayerClassRoute.Contents)
             {
-                var _class = repo.GetPlayerClassAsync(playerClassValue);
+                var _class = GetPlayerClassAsync(playerClassValue);
                 Debug.Print(_class.name);
             }
             return classList;
         }
 
-        private PlayerClassJson GetPlayerClassAsync(PlayerClassRoute playerClassRoute)
+        private static PlayerClassJson GetPlayerClassAsync(PlayerClassRoute playerClassRoute)
         {
             var characterClass = new PlayerClassJson();
 
@@ -44,7 +43,7 @@ namespace DnDCharacterMaker.Repositories
             return characterClass;
         }
 
-        private HttpWebRequest PrepareGetRequest(PlayerClassRoute playerClassRoute)
+        private static HttpWebRequest PrepareGetRequest(PlayerClassRoute playerClassRoute)
         {
             var url = endPath + "/classes/" + playerClassRoute.Value;
             var request = (HttpWebRequest)WebRequest.Create(url);

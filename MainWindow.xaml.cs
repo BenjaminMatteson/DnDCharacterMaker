@@ -28,7 +28,7 @@ namespace DnDCharacterMaker
         public MainWindow()
         {
            InitializeComponent();
-           var classList = Task.Run(() => new DnDApiRepository().LoadClassesAsync());
+           var classList = Task.Run(() => DnDApiRepository.LoadClassesAsync());
         }
 
     }
