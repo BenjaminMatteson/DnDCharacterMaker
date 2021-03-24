@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Converters",
+    "\\DTOs",
+    "\\DTOs\\Json",
+    "\\Models",
+    "\\Repositories",
+    "\\ViewModels",
+    "\\Views"
+  ],
+  "SelectedNode": "\\DnDCharacterMaker.csproj",
+  "PreviewInSolutionExplorer": false
+}

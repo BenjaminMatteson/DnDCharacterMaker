@@ -14,3 +14,19 @@ C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacte
 C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.pdb
 C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Ben\documents\visual studio 2017\Projects\DnDCharacterMaker\DnDCharacterMaker\bin\Debug\Newtonsoft.Json.xml
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\MainWindow.g.cs
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\App.g.cs
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker_MarkupCompile.cache
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker_MarkupCompile.lref
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\bin\Debug\DnDCharacterMaker.exe.config
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\bin\Debug\DnDCharacterMaker.exe
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\bin\Debug\DnDCharacterMaker.pdb
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\MainWindow.baml
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.g.resources
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.Properties.Resources.resources
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.csproj.GenerateResource.cache
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.csproj.CoreCompileInputs.cache
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.csproj.CopyComplete
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.exe
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.pdb
+C:\Users\benma\Source\Repos\BenjaminMatteson\DnDCharacterMaker\obj\Debug\DnDCharacterMaker.csprojAssemblyReference.cache

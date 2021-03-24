@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DnDCharacterMaker.Enumerations;
+using DnDCharacterMaker.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -26,12 +28,12 @@ namespace DnDCharacterMaker
             InitializeComponent();
 
             var httpRequestResponse = new HttpRequestResponse();
-            
-            var barbarian = httpRequestResponse.GetCharacterClass("http://www.dnd5eapi.co/api/classes/1");
-            Debug.WriteLine(barbarian.name);
-
-            
-
+            var repo = new DnDApiRepository();
+            foreach (var playerClassValue in PlayerClassRoute.Contents)
+            {
+                var _class = repo.GetPlayerClass(playerClassValue);
+               // var _startingEquipment = httpRequestResponse.GetReleases(_class.starting_equipment.url);
+            }
         }
     }
 }

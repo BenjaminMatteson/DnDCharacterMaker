@@ -35,29 +35,5 @@ namespace DnDCharacterMaker
             }
             return content;
         }
-
-        public PlayerClass GetPlayerClass(string url)
-        {
-            var request = (HttpWebRequest)WebRequest.Create(url);
-
-            request.Method = "GET";
-            request.UserAgent = url;
-            request.AutomaticDecompression = DecompressionMethods.Deflate | DecompressionMethods.GZip | DecompressionMethods.None;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-
-            var characterClass = new PlayerClass();
-
-            using (var response = (HttpWebResponse)request.GetResponse())
-            {
-                using (var stream = response.GetResponseStream())
-                {
-                    using (var sr = new StreamReader(stream))
-                    {
-                        characterClass = JsonConvert.DeserializeObject<PlayerClass>(sr.ReadToEnd());
-                    }
-                }
-            }
-            return characterClass;
-        }
     }
 }

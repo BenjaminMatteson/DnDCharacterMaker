@@ -57,11 +57,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DTOs\Class.cs" />
+    <Compile Include="Converters\StringTypeConverter.cs" />
+    <Compile Include="DTOs\ClassList.cs" />
+    <Compile Include="DTOs\Json\DamageTypeJson.cs" />
+    <Compile Include="DTOs\Json\PlayerClassJson.cs" />
+    <Compile Include="DTOs\Json\ProficiencyJson.cs" />
+    <Compile Include="Models\APIReference.cs" />
     <Compile Include="Enumerations\DataContractAttribute.cs" />
     <Compile Include="Enumerations\DataMemberAttribute.cs" />
     <Compile Include="Enumerations\ITypeSafeEnum.cs" />
-    <Compile Include="Enumerations\RequestType.cs" />
+    <Compile Include="Enumerations\PlayerClassRoute.cs" />
     <Compile Include="Enumerations\TypeSafeEnum.cs" />
     <Compile Include="HttpRequestResponse.cs" />
     <Compile Include="Repositories\DnDApiRepository.cs" />
