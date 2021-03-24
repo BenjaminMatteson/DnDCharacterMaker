@@ -11,7 +11,7 @@ namespace DnDCharacterMaker.Repositories
     {
         private const string endPath = "http://dnd5eapi.co/api";
 
-        public async Task<PlayerClassJson> GetPlayerClassAsync(PlayerClassRoute playerClassRoute)
+        public PlayerClassJson GetPlayerClassAsync(PlayerClassRoute playerClassRoute)
         {
 
             var characterClass = new PlayerClassJson();

@@ -38,7 +38,8 @@ namespace DnDCharacterMaker
             var classList = new List<PlayerClassRoute>();
             foreach (var playerClassValue in PlayerClassRoute.Contents)
             {
-                var _class = await repo.GetPlayerClassAsync(playerClassValue);
+                var _class = repo.GetPlayerClassAsync(playerClassValue);
+                Debug.Print(_class.name);
             }
             return classList;
         }
