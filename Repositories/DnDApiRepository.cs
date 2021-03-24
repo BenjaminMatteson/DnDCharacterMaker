@@ -4,6 +4,8 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace DnDCharacterMaker.Repositories
 {
@@ -11,9 +13,22 @@ namespace DnDCharacterMaker.Repositories
     {
         private const string endPath = "http://dnd5eapi.co/api";
 
-        public PlayerClassJson GetPlayerClassAsync(PlayerClassRoute playerClassRoute)
+        public async Task<List<PlayerClassRoute>> LoadClassesAsync()
         {
+            var httpRequestResponse = new HttpRequestResponse();
+            var repo = new DnDApiRepository();
 
+            var classList = new List<PlayerClassRoute>();
+            foreach (var playerClassValue in PlayerClassRoute.Contents)
+            {
+                var _class = repo.GetPlayerClassAsync(playerClassValue);
+                Debug.Print(_class.name);
+            }
+            return classList;
+        }
+
+        private PlayerClassJson GetPlayerClassAsync(PlayerClassRoute playerClassRoute)
+        {
             var characterClass = new PlayerClassJson();
 
             using (var response = (HttpWebResponse)PrepareGetRequest(playerClassRoute).GetResponse())
@@ -40,6 +55,5 @@ namespace DnDCharacterMaker.Repositories
 
             return request;
         }
-
     }
 }
